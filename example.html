@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Маркет монстр</title>
+
+   <link rel="stylesheet" href="assets/css/plugins.min.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   
+</head>
+<body>
+
+<header class="header">
+   <div class='container'>
+      <div class="header__inner">
+         <a href="/" class="header__logo">
+            <img src="assets/img/logo-dark.svg" alt="logo">
+         </a>
+         <ul class="header-nav header__nav">
+            <li><a href="#" class="active">Главная</a></li>
+            <li><a href="#">Продукты <img src="assets/img/drop.svg" alt="icon"></a></li>
+            <li><a href="#">Сообщество</a></li>
+            <li><a href="#">Предложения <img src="assets/img/drop.svg" alt="icon"></a></li>
+         </ul>
+         <a href="#" class="btn btn--black header__btn">Войти</a>
+
+         <div class="mobile-menu-btn">
+            <img src="assets/img/burger-menu.svg" alt="menu">
+         </div>
+      </div>
+   </div>
+</header>
+
+<div class="mobile-menu">
+   <div class="mobile-menu__close">
+      <img src="assets/img/close.svg" alt="close">
+   </div>
+   <div class="mobile-menu__body">
+      <ul class="mobile-menu__nav">
+         <li><a href="#" class="active">Главная</a></li>
+         <li><a href="#">Продукты <img src="assets/img/drop.svg" alt="icon"></a></li>
+         <li><a href="#">Сообщество</a></li>
+         <li><a href="#">Предложения <img src="assets/img/drop.svg" alt="icon"></a></li>
+      </ul>
+   </div>
+
+   <div class="mobile-menu__btns">
+      <a href="#s-help" class="btn btn--border scroll-link">Связаться с нами</a>
+      <a href="#" class="btn btn--black">Войти</a>
+   </div>
+</div>
+
+
+<section class="s-tarify">
+   <div class='container'>
+
+      <div class="section-head section-head--orange">
+         <div class="section-head__icon">
+            <img src="assets/img/h8.svg" alt="icon">
+         </div>
+         <div class="headline headline--blue">08 . услуги и цены</div>
+         <div class="h2">Тафирные планы</div>         
+      </div>
+
+      <div class="tarrifs">
+         <div class="tarrifs-head">
+            <select name="" class="company-select">
+               <option value="wb">wildberries</option>
+               <option value="ozon">Ozon</option>
+               <option value="avito" disabled>Авито</option>
+               <option value="ya" disabled>Яндекс маркет</option>
+               <option value="flowwow" disabled>flowwow</option>
+               <option value="uzum" disabled>uzum</option>
+               <option value="magnit" disabled>магнит</option>
+               <option value="sber" disabled>сбермега маркет</option>
+            </select>
+
+            <div class="tarrifs-company">
+               <div class="tarrifs-company__btn active" data-company="wb">
+                  <img src="assets/img/wb.png" alt="img">
+               </div>
+               <div class="tarrifs-company__btn" data-company="ozon">
+                  <img src="assets/img/ozon.png" alt="img">
+               </div>
+               <div class="tarrifs-company__btn disabled">
+                  <img src="assets/img/avito.png" alt="img">
+               </div>
+               <div class="tarrifs-company__btn disabled">
+                  <img src="assets/img/m.png" alt="img">
+               </div>
+               <div class="tarrifs-company__btn disabled">
+                  <img src="assets/img/flore.png" alt="img">
+               </div>
+               <div class="tarrifs-company__btn disabled">
+                  <img src="assets/img/uzum.png" alt="img">
+               </div>
+               <div class="tarrifs-company__btn disabled">
+                  <img src="assets/img/m2.png" alt="img">
+               </div>
+               <div class="tarrifs-company__btn disabled">
+                  <img src="assets/img/sber.png" alt="img">
+               </div>
+            </div>
+            <div class="tarrifs__change">
+               <div class="tarrifs__btn active" data-packet="launch">Запуск</div>
+               <div class="tarrifs__btn" data-packet="increase">Рост</div>
+               <div class="tarrifs__btn" data-packet="support">Поддержка</div>
+            </div>
+            <div class="tarrifs__change">
+               <div class="tarrifs__btn active" data-tariff="basic">Базовый</div>
+               <div class="tarrifs__btn" data-tariff="full">Под ключ</div>
+            </div>
+            <div class="tarrifs__change tarrifs__pay">
+               <div class="tarrifs__btn month1_btn" data-pay="month1">Ежемесячно</div>
+               <div class="tarrifs__btn active" data-pay="month3">3 месяца <span class="rossrochka">Рассрочка</span></div>
+               <div class="tarrifs__btn" data-pay="month6">6 месяца <span class="rossrochka">Рассрочка</span></div>
+               <div class="tarrifs__btn" data-pay="month12">12 месяца <span class="rossrochka">Рассрочка</span></div>
+            </div>
+
+            <div class="packet-mobile">
+               <div class="packet-mobile__title">Сравнение тарифов</div>
+               <div class="packet-mobile__item">
+                  <select class="tarif-select" name="tarrif-select-left">
+                     <option value="demo">DEMO</option>
+                     <option value="start" disabled>START</option>
+                     <option value="pro">PRO</option>
+                     <option value="vip">VIP</option>
+                  </select>
+               </div>
+               <div class="packet-mobile__item">
+                  <select class="tarif-select" name="tarrif-select-right">
+                     <option value="start">START</option>
+                     <option value="demo" disabled>DEMO</option>
+                     <option value="pro">PRO</option>
+                     <option value="vip">VIP</option>
+                  </select>
+               </div>
+            </div>
+
+            <div class="packet">
+               <div class="packet__item d-col show" data-packet-name="demo">
+                  <div class="packet__name">DEMO</div>
+                  <div class="packet__price">7 500 ₽</div>
+                  <a href="#" class="packet__btn">Купить</a>
+               </div>
+               <div class="packet__item d-col show" data-packet-name="start">
+                  <div class="packet__name">START</div>
+                  <div class="packet__price">7 500 ₽</div>
+                  <a href="#" class="packet__btn disabled">Купить</a>
+               </div>
+               <div class="packet__item d-col" data-packet-name="pro">
+                  <div class="packet__name">PRO <span class="popular">🔥Популярно</span></div>
+                  <div class="packet__price">7 500 ₽</div>
+                  <a href="#" class="packet__btn">Купить</a>
+               </div>
+               <div class="packet__item d-col" data-packet-name="vip">
+                  <div class="packet__name">VIP <span class="recomend">Рекомендуем</span></div>
+                  <div class="packet__price">7 500 ₽</div>
+                  <a href="#" class="packet__btn">Купить</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="tarrifs__out">
+            <div class="table">
+               <div class="table__item">
+                  <div class="table__title">111</div>
+                  <div class="row">
+                     <div class="table__name">имя1</div>
+                     <div class="table__col">х</div>
+                     <div class="table__col">22</div>
+                     <div class="table__col">55</div>
+                     <div class="table__col">44</div>
+                  </div>
+                  <div class="row">
+                     <div class="table__name">имя1</div>
+                     <div class="table__col">х</div>
+                     <div class="table__col">22</div>
+                     <div class="table__col">55</div>
+                     <div class="table__col" data-="">44</div>
+                  </div>
+               </div>
+   
+               <div class="table__item">
+                  <div class="table__title">222</div>
+                  <div class="row">
+                     <div class="table__name">имя1</div>
+                     <div class="table__col">х</div>
+                     <div class="table__col">22</div>
+                     <div class="table__col">55</div>
+                     <div class="table__col" data-="">44</div>
+                  </div>
+                  <div class="row">
+                     <div class="table__name">имя1</div>
+                     <div class="table__col">х</div>
+                     <div class="table__col">22</div>
+                     <div class="table__col">55</div>
+                     <div class="table__col" data-="">44</div>
+                  </div>
+                  <div class="row">
+                     <div class="table__name">имя1</div>
+                     <div class="table__col">х</div>
+                     <div class="table__col">22</div>
+                     <div class="table__col">55</div>
+                     <div class="table__col" data-="">44</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<div class="cookie-popup zoom-anim-dialog mfp-hide" id="cookie-popup">
+   <div class="cookie-popup__title">Мы уважаем вашу конфидециальность</div>
+   <div class="cookie-popup__text">
+      <p>Мы используем файлы cookie, чтобы улучшить ваш опыт, но не храним в них конфидециальную личную информацию.
+         Подробную информацию можно найти в нашей <br><a href="#">Политике конфидециальности.</a></p>
+      <p>Ознакомьтесь с полной <a href="#">Политикой использования файлов cookie</a></p>
+   </div>
+   <div class="cookie-popup__btbs">
+      <a href="#" class="sm-btn sm-btn--grey">Принять файлы cookie</a>
+      <a href="#" class="sm-btn sm-btn--grey">Отклонить файлы cookie</a>
+      <a href="#" class="sm-btn sm-btn--black">Управление файлами cookie</a>
+   </div>
+</div>
+<footer class="footer">
+   <div class='container'>
+      <div class="footer__inner">
+         <div class="footer__item">
+            <a href="#" class="footer__logo">
+               <img src="assets/img/footer-logo.svg" alt="logo">
+            </a>
+            <ul class="footer__links footer__desc">
+               <li><a href="#">Политика конфиденциальности</a></li>
+               <li><a href="#">Пользовательское соглашение</a></li>
+               <li><a href="#cookie-popup" class="btn-popup">Политика обработки файлов cookies</a></li>
+            </ul>
+            <div class="footer__copy footer__desc">
+               <span>©2024 Market Monstr Group </span>
+               <span>Все права защищены</span>
+            </div>
+         </div>
+         <div class="footer__item">
+            <div class="footer__title"><img src="assets/img/nav.svg" alt="icon"> Навигация</div>
+            <ul class="footer__nav">
+               <li><a href="#">Главная</a></li>
+               <li><a href="#">Продукты</a></li>
+               <li><a href="#">Сообщество</a></li>
+               <li><a href="#">Предложения</a></li>
+               <li><a href="#">Связь</a></li>
+            </ul>
+         </div>
+         <div class="footer__item">
+            <div class="footer__title"><img src="assets/img/tel.svg" alt="icon"> Номер связи</div>
+            <div class="footer__tell">
+               <a href="#">8 (999) 999 99-99</a>
+            </div>
+            <div class="footer__email">
+               <a href="#">support@marketmonstr.info</a>
+            </div>
+
+            <div class="footer__soc">
+               <a href="#">
+                  <img src="assets/img/telegram.svg" alt="telegram">
+               </a>
+               <a href="#">
+                  <img src="assets/img/whatsapp.svg" alt="whatsapp">
+               </a>
+               <a href="#">
+                  <img src="assets/img/vk.svg" alt="vk">
+               </a>
+            </div>
+         </div>
+         <div class="footer__item">
+            <a href="#" class="btn btn--white">Связаться</a>
+         </div>
+
+         <div class="footer__mob">
+            <ul class="footer__links">
+               <li><a href="#">Политика конфиденциальности</a></li>
+               <li><a href="#">Пользовательское соглашение</a></li>
+               <li><a href="#cookie-popup" class="btn-popup">Политика обработки файлов cookies</a></li>
+            </ul>
+            <div class="footer__copy">
+               <span>©2024 Market Monstr Group </span>
+               <span>Все права защищены</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+ 
+
+<script src="assets/js/plugins.min.js"></script>
+<script src="assets/js/price.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
